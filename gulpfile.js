@@ -4,7 +4,7 @@ var gulp = require('gulp'),
 		sass = require('gulp-sass');
 
 gulp.task('pug', function() {
-	return gulp.src('src/pug/*.pug')
+	return gulp.src('src/*.pug')
 		.pipe(pug({
 			pretty:true
 		}))

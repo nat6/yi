@@ -3,35 +3,216 @@
   <head>
     <!--Служебная информация для браузера-->
     <meta charset="utf-8">
-    <meta name="description" content="">
+    <meta name="description" content="Ремонт квартир под ключ, косметический ремонт, ремонт в новостройках.  Ремонт санузлов, ванных комнат, отделка балконов.  Узнайте стоимость отделочных работ под ваш объект. Выезд замерщика бесплатно. Мы предлагаем средние расценки по Санкт-Петербургу. Учитываем бюджет. Гарантия на все работы. Поэтапная оплата. После подписания договора, стоимость ремонта не меняется. Вывоз мусора.">
     <meta name="keywords" content="">
-    <!--Фавикон-->
-    <title>YIstroi</title>
+    <link rel="shortcut icon" href="?" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <title>YIstroi — Ремонт квартир и коттеджей, все виды ремонтных работ.</title>
   </head>
   <body>
     <div class="container">
       <!--Шапка сайта-->
       <header class="header">
-        <div class="header__nav"><a class="menu__link" href="?">Главная</a><a class="menu__link" href="?">О нас</a><a class="menu__link" href="?">Услуги</a><a class="menu__link" href="?">Контакты</a><a class="menu__link" href="mailto: yistroi@mail.ru">yistroi@mail.ru</a><a class="menu__link" href="tel: +79500102410">+79500102410</a><a class="menu__link" href="https://vk.com/yi_stroi" target="_blank"><img class="vk__icon" src="?" alt="vkontakte" width="?"></a></div>
+        <div class="header__nav"><a class="menu__link" href="#hello">Главная</a><a class="menu__link" href="#about">О нас</a><a class="menu__link" href="#services">Услуги</a><a class="menu__link" href="#price">Прайс</a><a class="menu__link" href="#contacts">Контакты</a><a class="menu__link" href="mailto: yistroi@mail.ru">yistroi@mail.ru</a><a class="menu__link" href="tel: +79500102410">+79500102410</a><a class="menu__link" href="https://vk.com/yi_stroi" target="_blank"><img class="vk__icon" src="img/vk.svg" alt="vkontakte"></a></div>
       </header>
       <!--Основное содержимое-->
       <main class="main">
-        <main class="main__container">
-          <div class="main__block hello-block"></div>
-          <div class="main__block about-us"></div>
-          <div class="main__block services"></div>
-          <div class="main__block promo-blocks">
-            <div class="promo-1"></div>
-            <div class="promo-2"></div>
-            <div class="promo-3"></div>
+        <!--Первый (приветственный) блок-->
+        <div class="main__block hello" id="hello"> 
+          <div class="hello__container">
+            <div class="hello__block1"><img class="hello__logo" src="img/logo.png">
+              <h1 class="hello__name"><i>YI</i>stroi</h1>
+              <p class="hello__tagline">Наш опыт работает на Вас</p>
+              <p class="hello__text">Ремонт квартир и внутренняя отделка загородных домов</p>
+            </div>
+            <div class="hello__block2"><img class="hello__img" src="img/header.jpg"></div>
           </div>
-          <div class="main__block video"></div>
-          <div class="main__block review"></div>
-          <div class="main__block contacts-form"></div>
-        </main>
+        </div>
+        <!--Второй блок (о нас)-->
+        <div class="main__block about" id="about"><img src="img/about.JPG">
+          <div class="about__info">
+            <h2 class="about__header">О НАС</h2>
+            <p class="about__text">
+              Комания YIstroi – оказывает полный комплекс услуг по ремонту квартир и внутренней отделки загородных домов любой сложности. 
+              Мы предлагаем широкий спектр услуг в соответствии с потребностями клиентов: ремонты от эконом до премиум касса, все виды инженерных и отделочных работ. 
+              Вы можете заказать ремонт в отдельных помещениях, например, только на кухне, в ванной комнате или в санузле. 
+            </p>
+            <p class="about__text">К каждому клиенту мы находим индивидуальный подход и предлагаем наиболее выгодные условия для сотрудничества.</p>
+            <p class="about__text">Кроме того, мы предлагаем помощь в приемке квартир у застройщика – при условии последующего заказа ремонтно-отделочных работ в нашей фирме.</p>
+          </div>
+        </div>
+        <!--Третий блок (услуги)-->
+        <div class="main__block services" id="services">
+          <h2 class="services__header">УСЛУГИ</h2>
+          <p class="services__subtitle">Что мы предлагаем</p>
+          <p class="services__text">Мы стремимся использовать самые современные технологии.</p>
+          <p class="services__text">Мы предлагаем Вам ремонт от эконом до премиум класса.</p>
+          <p class="services__text">Все виды инженерных и отделочных работ.</p>
+          <p class="services__text">Мы предлагаем максимально гибкие и выгодные условия сотрудничества.</p>
+          <p class="services__text">Постоянный контроль над работой мастеров. </p>
+          <p class="services__text">
+            Отсутствие скрытых комиссий и дополнительных расходов. 
+            Мы работаем по смете, одобренной клиентом.
+          </p>
+          <p class="services__text">Гарантия до 5 лет.</p>
+        </div>
+        <!--Четвёртый блок (промо)-->
+        <div class="main__block promo">
+          <div class="promo-1">
+            <div class="promo-1__block1"><img class="promo1__img" src="img/promo-1.jpg"></div>
+            <div class="promo-1__block2">
+              <h3 class="promo__header">КОСМЕТИЧЕСКИЙ РЕМОНТ</h3>
+              <p class="promo__text">от 2500 руб./м<sup>2</sup></p><a class="promo__link" href="#cosmetic">Подробно</a>
+            </div>
+          </div>
+          <div class="promo-2">
+            <div class="promo-2__block1"><img class="promo2__img" src="img/promo-2.jpg"></div>
+            <div class="promo-2__block2">
+              <h3 class="promo__header">РЕМОНТ В НОВОСТРОЙКЕ</h3>
+              <p class="promo__text">от 3100 руб./м<sup>2</sup></p><a class="promo__link" href="#new">Подробно</a>
+            </div>
+          </div>
+          <div class="promo-3">
+            <div class="promo-3__block1"><img class="promo3__img" src="img/promo-3.jpg"></div>
+            <div class="promo-3__block2">
+              <h3 class="promo__header">КАПИТАЛЬНЫЙ РЕМОНТ</h3>
+              <p class="promo__text">от 4500 руб./м<sup>2</sup></p><a class="promo__link" href="#capital">Подробно</a>
+            </div>
+          </div>
+        </div>
+        <!--Пятый-седьмой блок (предложения)-->
+        <div class="portfolio">
+          <h2 class="portfolio__header">ПОРТФОЛИО ПРОЕКТОВ</h2>
+          <!--Пятый блок-->
+          <div class="main__block cosmetic" id="cosmetic">
+            <div class="cosmetic__container">
+              <div class="cosmetic__block1">
+                <h3 class="cosmetic__header">КОСМЕТИЧЕСКИЙ РЕМОНТ</h3>
+              </div>
+              <div class="cosmetic__block2"><img class="cosmetic__photo" src="img/cosmetic-1.JPG"><img class="cosmetic__photo" src="img/cosmetic-2.JPG"><img class="cosmetic__photo" src="img/cosmetic-3.JPG"><img class="cosmetic__photo" src="img/cosmetic-4.JPG"></div>
+            </div>
+          </div>
+          <!--Шестой блок-->
+          <div class="main__block capital" id="capital">
+            <div class="capital__container">
+              <div class="capital__block1">
+                <h3 class="capital__header">КАПИТАЛЬНЫЙ РЕМОНТ</h3>
+              </div>
+              <div class="capital__block2"><img class="capital__photo" src="img/capital-1.JPG"><img class="capital__photo" src="img/capital-2.JPG"><img class="capital__photo" src="img/capital-3.JPG"><img class="capital__photo" src="img/capital-4.JPG"></div>
+            </div>
+          </div>
+          <!--Седьмой блок-->
+          <div class="main__block new" id="new">
+            <div class="new__container">
+              <div class="new__block1">
+                <h3 class="new__header">РЕМОНТ В НОВОСТРОЙКЕ</h3>
+              </div>
+              <div class="new__block2"><img class="new__photo" src="img/new-1.JPG"><img class="new__photo" src="img/new-2.JPG"><img class="new__photo" src="img/new-3.JPG"><img class="new__photo" src="img/new-4.JPG"></div>
+            </div>
+          </div>
+        </div>
+        <!--Восьмой блок (прайс)-->
+        <div class="main__block price" id="price">
+          <h2 class="price__header">ПРАЙС-ЛИСТ</h2>
+        </div>
+        <!--Девятый блок (видео)-->
+        <div class="main__block video">
+          <video autoplay loop muted poster="img/poster.png" width="100%">
+            <!-- MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7-->
+            <source src="img/video.mp4" type="video/mp4">
+            <!-- WebM/VP8 для Firefox4, Opera, и Chrome-->
+            <source src="video.webm" type="video/webm">
+            <!-- Ogg/Vorbis для старых версий браузеров Firefox и Opera-->
+            <source src="video.ogv" type="video/ogg">
+          </video>
+        </div>
+        <!--Десятый блок (порядок работы)-->
+        <div class="main__block work">
+          <h2 class="work__header_main">ПОРЯДОК РАБОТЫ</h2>
+          <div class="work__container">
+            <div class="work__block1">
+              <h3 class="work__header">ЗАЯВКА</h3>
+              <p class="work__text">
+                Вы оставляете заявку на сайте или по телефону +79500102410. 
+                Наши специалисты уточнят все подробности, ответят на все Ваши вопросы и передадут заявку специалисту по замеру.
+              </p>
+            </div>
+            <div class="work__block2">
+              <h3 class="work__header">ЗАМЕР</h3>
+              <p class="work__text">
+                Замер необходим для оценки стоимость Вашего ремонта. 
+                К Вам БЕСПЛАТНО выезжает замерщик для составление точной сметы.
+                На стадии замера расскажите все свои пожелания и планы. 
+                От этого зависит  точность сметы и окончательный результат работ.
+                Смета составляется подробно, по каждому пункту отдельно и Вы сможете увидеть сколько будет стоить каждая работа.
+              </p>
+            </div>
+            <div class="work__block3">
+              <h3 class="work__header">ДОГОВОР</h3>
+              <p class="work__text">
+                После согласования сметы и графика работ подписываем договор.
+                Пример договора отправляем на электронную почту.
+              </p>
+            </div>
+            <div class="work__block4">
+              <h3 class="work__header">РАБОТА</h3>
+              <p class="work__text">
+                Мы выполняем ремонтные работы согласно графику и в рамках сметы.
+                Оплата происходит по акту выполненных работ. 
+              </p>
+            </div>
+            <div class="work__block5">
+              <h3 class="work__header">ПРИЁМ</h3>
+              <p class="work__text">
+                Во время сдачи подписывается акт выполненных работ.
+                Если Вас все устраивает, вы производите окончательную оплату и получаете гарантию 2 года.
+              </p>
+            </div>
+            <div class="work__final">
+              <p class="work__text">Вывозим мусор, производим влажную уборку.</p>
+            </div>
+          </div>
+        </div>
+        <!--Одиннадцатый блок-->
+        <div class="main__block go">
+          <p class="go__text">
+            Вы готовы начать ремонт? 
+            Тогда мы приедем на объект бесплатно, сделаем замеры, проконсультируем по видам ремонта и предоставим бесплатную развернутую смету.
+          </p>
+        </div>
+        <!--Двеннадцатый блок (контакты)-->
+        <div class="main__block contacts" id="contacts">
+          <div class="contacts__container">
+            <div class="contacts__block1">
+              <h2 class="contacts__header">КОНТАКТЫ</h2>
+              <p class="contacts__text">Свяжитесь с нами, и наши квалифицированные специалисты приступят к работе уже сегодня.</p>
+              <p class="contacts__text"><a class="contacts__link" href="mailto: yistroi@mail.ru">yistroi@mail.ru</a></p>
+              <p class="contacts__text"><a class="contacts__link" href="tel: +79500102410">+79500102410</a></p>
+            </div>
+            <!-- Форма обратной связи-->
+            <!-- Данные введенные пользователем обрабатываются кодом в файле mail.php-->
+            <div class="contacts__block2">
+              <div class="contacts__form">
+                <form action="mail.php" method="post">
+                  <input class="input_half" placeholder="Имя" maxlength="30" type="text" name="name" required>
+                  <input class="input_half" placeholder="Эл. почта" maxlength="30" type="text" name="mail">
+                  <input class="input_half" placeholder="Телефон" maxlength="30" type="text" name="phone" required>
+                  <input class="input_half" placeholder="Адрес" maxlength="50" type="text" name="?">
+                  <input class="input_full" placeholder="Тема" maxlength="150" type="text" name="?">
+                  <textarea class="input_max" placeholder="Добавьте сообщение" maxlength="550" rows="4" cols="50" name="message"></textarea>
+                  <input class="input_button" type="submit" value="Отправить">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <!--Подвал сайта-->
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <p class="footer__text"><a class="footer__number" href="tel: +79500102410">+79500102410</a></p>
+        <p class="footer__text">YIstroi © 2020 </p>
+        <p class="footer__text">Информация на сайте www.yistroi.ru.ru носит исключительно ознакомительный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.</p>
+      </footer>
     </div>
   </body>
 </html>
