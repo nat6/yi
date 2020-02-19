@@ -5,6 +5,7 @@ html(lang='ru-RU')
 		meta(charset='utf-8')
 		meta(name='description' content='Ремонт квартир под ключ, косметический ремонт, ремонт в новостройках.  Ремонт санузлов, ванных комнат, отделка балконов.  Узнайте стоимость отделочных работ под ваш объект. Выезд замерщика бесплатно. Мы предлагаем средние расценки по Санкт-Петербургу. Учитываем бюджет. Гарантия на все работы. Поэтапная оплата. После подписания договора, стоимость ремонта не меняется. Вывоз мусора.')
 		meta(name='keywords' content='')
+		meta(name='viewport' content='width=device-width')
 		link(rel='shortcut icon' href='?' type='image/png')
 		link(rel="stylesheet" type="text/css" href="styles/style.css")
 		title YIstroi — Ремонт квартир и коттеджей, все виды ремонтных работ.
@@ -21,26 +22,26 @@ html(lang='ru-RU')
 					a.menu__link(href='mailto: yistroi@mail.ru') yistroi@mail.ru
 					a.menu__link(href='tel: +79500102410') +79500102410
 					a.menu__link(href='https://vk.com/yi_stroi' target='_blank')
-						img.vk__icon(src="img/vk.svg" alt="vkontakte")
+						img.vk__icon(src="img/vk.png" alt="vkontakte")
 			//Основное содержимое
 			main.main
 				//Первый (приветственный) блок
 				div#hello.main__block.hello 
-					div.hello__container
-						div.hello__block1
-							img.hello__logo(src='img/logo.png')
-							h1.hello__name <i>YI</i>stroi
-							p.hello__tagline Наш опыт работает на Вас
-							p.hello__text Ремонт квартир и внутренняя отделка загородных домов
-						div.hello__block2
-							img.hello__img(src='img/header.jpg')
+					div.hello__block1
+						img.hello__logo(src='img/logo.png')
+						div.block1__text
+							div.block1__container
+								h1.hello__name <i>YI</i>STROI
+								p.hello__tagline Наш опыт работает на Вас
+								p.hello__text Ремонт квартир и внутренняя отделка загородных домов
+					div.hello__block2
+						img.hello__img(src='img/header.jpg')
 				//Второй блок (о нас)
 				div#about.main__block.about
-					img(src='img/about.JPG')
 					div.about__info
 						h2.about__header О НАС
 						p.about__text.
-							Комания YIstroi – оказывает полный комплекс услуг по ремонту квартир и внутренней отделки загородных домов любой сложности. 
+							Компания YIstroi – оказывает полный комплекс услуг по ремонту квартир и внутренней отделки загородных домов любой сложности. 
 							Мы предлагаем широкий спектр услуг в соответствии с потребностями клиентов: ремонты от эконом до премиум касса, все виды инженерных и отделочных работ. 
 							Вы можете заказать ремонт в отдельных помещениях, например, только на кухне, в ванной комнате или в санузле. 
 						p.about__text.
@@ -49,44 +50,45 @@ html(lang='ru-RU')
 							Кроме того, мы предлагаем помощь в приемке квартир у застройщика – при условии последующего заказа ремонтно-отделочных работ в нашей фирме.
 				//Третий блок (услуги)
 				div#services.main__block.services
-					h2.services__header УСЛУГИ
-					p.services__subtitle Что мы предлагаем
-					p.services__text.
-						Мы стремимся использовать самые современные технологии.
-					p.services__text.
-						Мы предлагаем Вам ремонт от эконом до премиум класса.
-					p.services__text.
-						Все виды инженерных и отделочных работ.
-					p.services__text.
-						Мы предлагаем максимально гибкие и выгодные условия сотрудничества.
-					p.services__text.
-						Постоянный контроль над работой мастеров. 
-					p.services__text.
-						Отсутствие скрытых комиссий и дополнительных расходов. 
-						Мы работаем по смете, одобренной клиентом.
-					p.services__text.
-						Гарантия до 5 лет.
+					div.services__container
+						h2.services__header УСЛУГИ
+						p.services__subtitle Что мы предлагаем
+						p.services__text.
+							Мы стремимся использовать самые современные технологии.
+						p.services__text.
+							Мы предлагаем Вам ремонт от эконом до премиум класса.
+						p.services__text.
+							Все виды инженерных и отделочных работ.
+						p.services__text.
+							Мы предлагаем максимально гибкие и выгодные условия сотрудничества.
+						p.services__text.
+							Постоянный контроль над работой мастеров. 
+						p.services__text.
+							Отсутствие скрытых комиссий и дополнительных расходов. 
+							Мы работаем по смете, одобренной клиентом.
+						p.services__text.
+							Гарантия до 5 лет.
 				//Четвёртый блок (промо)
 				div.main__block.promo
-					div.promo-1
+					div.promo-1.promo__block
 						div.promo-1__block1
-							img.promo1__img(src='img/promo-1.jpg')
-						div.promo-1__block2
-							h3.promo__header КОСМЕТИЧЕСКИЙ РЕМОНТ
+							img.promo__img(src='img/promo-1.jpg')
+						div.promo__block2
+							h3.promo__header КОСМЕТИЧЕСКИЙ <br> РЕМОНТ
 							p.promo__text от 2500 руб./м<sup>2</sup>
 							a.promo__link(href='#cosmetic') Подробно
-					div.promo-2
+					div.promo-2.promo__block
 						div.promo-2__block1
-							img.promo2__img(src='img/promo-2.jpg')
-						div.promo-2__block2
-							h3.promo__header РЕМОНТ В НОВОСТРОЙКЕ
+							img.promo__img(src='img/promo-2.jpg')
+						div.promo__block2
+							h3.promo__header РЕМОНТ В <br> НОВОСТРОЙКЕ
 							p.promo__text от 3100 руб./м<sup>2</sup>
 							a.promo__link(href='#new') Подробно
-					div.promo-3
+					div.promo-3.promo__block
 						div.promo-3__block1
-							img.promo3__img(src='img/promo-3.jpg')
-						div.promo-3__block2
-							h3.promo__header КАПИТАЛЬНЫЙ РЕМОНТ
+							img.promo__img(src='img/promo-3.jpg')
+						div.promo__block2
+							h3.promo__header КАПИТАЛЬНЫЙ <br> РЕМОНТ
 							p.promo__text от 4500 руб./м<sup>2</sup>
 							a.promo__link(href='#capital') Подробно
 				//Пятый-седьмой блок (предложения)
@@ -127,7 +129,7 @@ html(lang='ru-RU')
 					h2.price__header ПРАЙС-ЛИСТ
 				//Девятый блок (видео)
 				div.main__block.video
-					video(autoplay loop muted poster='img/poster.png' width='100%')
+					video(loop muted poster='img/poster.png' width='100%')
 						// MP4 для Safari, IE9, iPhone, iPad, Android, и Windows Phone 7
 						source(src="img/video.mp4" type="video/mp4")
 						// WebM/VP8 для Firefox4, Opera, и Chrome

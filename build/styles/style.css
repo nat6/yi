@@ -1,3 +1,271 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i|Open+Sans:300,300i&display=swap&subset=cyrillic");
 img {
-	width: 30px;
+  width: 50px; }
+
+p, a {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #050505;
+  text-decoration: none; }
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #1a9f29; }
+
+h1 {
+  font-size: 400%; }
+
+h2 {
+  font-size: 230%; }
+
+h3 {
+  font-size: 100%; }
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px; }
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 3%;
+  padding-right: 8%;
+  padding-bottom: 3%;
+  background-color: white; }
+
+.menu__link {
+  font-size: 85%;
+  padding-left: 24px; }
+
+.vk__icon {
+  width: 16px; }
+
+.hello {
+  max-width: 1050px;
+  display: flex;
+  margin-top: 9%;
+  margin-right: 6%;
+  margin-bottom: 0;
+  margin-left: 6%;
+  background-color: #f0f0f0; }
+
+.hello__block1, .hello__block2 {
+  flex: 0 1 50%; }
+
+.hello__logo {
+  width: 80px;
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 25%;
+  padding-bottom: 2%;
+  padding-left: 10%; }
+
+.block1__text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0; }
+
+.hello__tagline {
+  font-size: 90%; }
+
+.hello__name {
+  padding: 0;
+  margin: 0; }
+
+.hello__text {
+  font-size: 110%;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%; }
+
+.hello__img {
+  width: 100%;
+  height: 100%; }
+
+.about {
+  max-width: 100%;
+  display: flex;
+  padding: 10%;
+  padding-left: 7%;
+  padding-right: 7%;
+  margin-top: 6%;
+  background-color: #f0f0f0;
+  background-image: url(../img/about.JPG);
+  background-position: 16% 50%;
+  background-repeat: no-repeat;
+  background-size: 45%; }
+
+.about__info {
+  background-color: white;
+  margin: 0;
+  margin-left: 40%;
+  padding: 20px;
+  padding-left: 25px; }
+
+.about__header {
+  margin: 2%;
+  margin-left: 8%; }
+
+.about__text {
+  font-size: 80%;
+  margin: 0;
+  margin-top: 1%; }
+
+.services {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 7%; }
+
+.services__header {
+  margin-bottom: 12px; }
+
+.services__subtitle {
+  font-size: 125%;
+  margin-top: 0;
+  margin-bottom: 30px; }
+
+.services__text {
+  margin: 0;
+  font-size: 100%; }
+
+.promo {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto; }
+
+.promo__block {
+  flex: 0 1 33.333%;
+  margin: 1%;
+  background-color: #1a9f29; }
+
+.promo__img {
+  width: 100%; }
+
+.promo__block2 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding-top: 5%;
+  padding-bottom: 7%; }
+
+.promo__header {
+  color: white; }
+
+.promo__text {
+  color: white;
+  font-size: 80%; }
+
+.promo__link {
+  padding-top: 4%;
+  padding-bottom: 4%;
+  color: #d4d4d4; }
+
+/*
+.img__about {
+	width: 50%;
+	height: 50%;
 }
+
+@media (max-width:1200px) {
+	.container {
+		max-width:970px;
+	}
+}
+@media (max-width:992px) {
+	.container {
+		max-width:750px;
+	}
+}
+@media (max-width:767px) {
+	.container {
+		max-width:none;
+	}
+}
+*/
+/*
+.promo {
+	max-width: 1100px;
+	margin: 0 auto;
+	display: flex;
+}
+.promo__block {
+	flex: 0 1 33.333%;
+	background-color: $maincol2;
+	margin: 15px;
+}
+*/
+/*
+%shablon {
+	background-color: yellow;
+}
+Включение строки в нужный селектор
+@extend %shablon;
+______
+$fz:100px;
+@mixin fontz($f,$c) {
+	font-size:$f;
+	color:$c;
+}
+
+Подключение в селекторе
+@include fontz(50px,green);
+_______
+width: 300px / 960px * 100%;
+*/
+/*
+
+// Добавление миксинов | @extend %mr;
+%mr {
+	display: flex;
+	margin:0 auto;
+}
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i&display=swap&subset=cyrillic" rel="stylesheet">
+font-family: 'Montserrat', sans-serif;
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i&display=swap&subset=cyrillic" rel="stylesheet">
+font-family: 'Open Sans', sans-serif;
+
+ @font-face {
+		font-family: 'Kometa';
+		src: local('Kometa Unicase-Light'), local('Kometa-Unicase-Light'),
+				url('KometaUnicase-Light.woff2') format('woff2'),
+				url('KometaUnicase-Light.woff') format('woff'),
+				url('KometaUnicase-Light.ttf') format('truetype');
+		font-weight: 300;
+		font-style: normal;
+	}
+
+@font-face {
+	font-family: 'Latinotype';
+	src: local('Latinotype Book'), local('Latinotype-Book'),
+			url('ArquitectaBook.woff2') format('woff2'),
+			url('ArquitectaBook.woff') format('woff'),
+			url('ArquitectaBook.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Latinotype';
+	src: local('Latinotype Book Italic'), local('Latinotype-Book-Italic'),
+			url('ArquitectaBook-Italic.woff2') format('woff2'),
+			url('ArquitectaBook-Italic.woff') format('woff'),
+			url('ArquitectaBook-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+*/
