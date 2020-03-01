@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic");
+img {
+  width: 50px; }
+
+@font-face {
+  font-family: "BookAntiqua";
+  src: url("../fonts/BookAntiqua.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/BookAntiqua.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua.ttf") format("truetype"), url("../fonts/BookAntiqua.woff") format("woff"), url("../fonts/BookAntiqua.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+label, .table__price {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #131313;
+  text-decoration: none; }
+
+.price__container {
+  width: 670px;
+  display: flex;
+  justify-content: space-between;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative; }
+
+.price__block {
+  display: flex;
+  justify-content: space-between;
+  font-size: 125%;
+  font-weight: 600; }
+
+.price__input {
+  display: none; }
+
+.price__label {
+  font-size: 90%;
+  font-weight: 500;
+  padding: 20px;
+  z-index: 120; }
+
+.table__price {
+  width: 670px;
+  padding: 20px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  background-color: white;
+  border-collapse: collapse;
+  border: 8px solid #f0f0f0;
+  border-radius: 5px; }
+
+.table__header, .table__cell {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+.table__header {
+  width: 600px;
+  font-size: 75%;
+  font-weight: 500;
+  border: 1px solid #1a9f2aa1; }
+
+.table__cell {
+  font-size: 75%;
+  font-weight: 400;
+  border: 1px solid #1a9f2aa1; }
+
+.first-col-head {
+  width: 66%; }
+
+.first-col {
+  text-align: left; }
+
+.table__price {
+  display: none; }
+
+.price__input:checked ~ .table__price {
+  display: block; }
+
+.price__input:checked ~ .price__label {
+  border: 8px solid #f0f0f0;
+  border-bottom: 8px solid white;
+  border-radius: 5px 5px 0 0;
+  position: relative;
+  top: -8px;
+  left: -6px; }
+
+.price__input:checked ~ .price__label1 {
+  left: -8px; }
+
+.price__input:checked ~ .price__label2 {
+  left: 8px; }
+
+.price__input:checked ~ .price__label3 {
+  left: 8px; }
+
+.price__input:checked ~ .price__label4 {
+  left: 8px; }

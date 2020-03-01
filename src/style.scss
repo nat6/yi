@@ -1,28 +1,24 @@
-img {
-	width: 50px;
-}
-// Объявление переменных
-$mc:#1a9f29; // цвет бренда
-$bc:#f0f0f0; // фоновый цвет
-$tc:#050505; // цвет текста
-// Добавление Гугл шрифтов
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i|Open+Sans:300,300i&display=swap&subset=cyrillic');
-// Подключение и декор базовых шрифтов
-p, a {
-	font-family: 'Open Sans', sans-serif;
-	font-weight: 300;
+@import "tools.scss";
+p, a, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
 	color: $tc;
 	text-decoration: none;
 }
-h1, h2, h3 {
+a:hover {
+	color: $toc;
+	transition: all .5s ease;
+}
+h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	color: $mc;
-}
-h1 {
 	font-size: 400%;
 }
 h2 {
+	font-family: 'BookAntiqua', serif;
+	font-weight: 400;
+	color: $mc;
 	font-size: 230%;
 }
 h3 {
@@ -43,34 +39,38 @@ h3 {
 	top: 0;
 	right: 0;
 	padding-top: 3%;
-	padding-right: 8%;
+	padding-right: 9%;
 	padding-bottom: 3%;
 	background-color: white;
+	border-bottom: 1px solid $rc;
+	z-index: 900;
 }
 .header__nav {
+	background-color: white;
 }
 .menu__link {
 	font-size: 85%;
 	padding-left: 24px;
 }
 .vk__icon {
-	width: 16px;
+	width: 15px;
 }
 // Первый (приветственный) блок
 .hello {
 	max-width: 1050px;
 	display: flex;
-	margin-top: 9%;
+	margin-top: 8%;
 	margin-right: 6%;
 	margin-bottom: 0; 
 	margin-left: 6%;
 	background-color: $bc;
+	border: 1px solid $rc;
 }
 .hello__block1, .hello__block2 {
 	flex: 0 1 50%;
 }
 .hello__logo {
-	width: 80px;
+	width: 120px;
 	display: flex;
 	justify-content: flex-start;
 	padding-top: 25%;
@@ -83,15 +83,18 @@ h3 {
 	text-align: center;
 	padding: 0;
 }
-.hello__tagline {
-	font-size: 90%;
-}
 .hello__name {
 	padding: 0;
 	margin: 0;
 }
+.hello__tagline {
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 90%;
+}
 .hello__text {
-	font-size: 110%;
+	font-size: 120%;
+	font-weight: 500;
 	padding-top: 5%;
 	padding-left: 10%;
 	padding-right: 10%;
@@ -104,31 +107,32 @@ h3 {
 .about {
 	max-width: 100%;
 	display: flex;
-	padding: 10%;
+	padding: 14%;
 	padding-left: 7%;
-	padding-right: 7%;
+	padding-right: 8%;
 	margin-top: 6%;
 	background-color: $bc;
 	background-image: url(../img/about.JPG);
 	background-position: 16% 50%;
 	background-repeat: no-repeat;
 	background-size: 45%;
+	border: 1px solid $rc;
 }
 .about__info {
 	background-color: white;
 	margin: 0;
-	margin-left: 40%;
-	padding: 20px;
-	padding-left: 25px;
+	margin-left: 50%;
+	padding: 25px;
+	padding-left: 30px;
 }
 .about__header {
-	margin: 2%;
+	margin: 3%;
 	margin-left: 8%;
 }
 .about__text {
-	font-size: 80%;
+	font-size: 95%;
 	margin: 0;
-	margin-top: 1%;
+	margin-top: 3%;
 }
 // Третий блок (УСЛУГИ)
 .services {
@@ -136,7 +140,7 @@ h3 {
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	margin-top: 5%;
+	margin-top: 6%;
 	margin-bottom: 7%;
 }
 .services__header {
@@ -145,10 +149,10 @@ h3 {
 .services__subtitle {
 	font-size: 125%;
 	margin-top: 0;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 .services__text {
-	margin: 0;
+	margin: 5px;
 	font-size: 100%;
 }
 // Четвёртый блок (ПРОМО)
@@ -163,6 +167,7 @@ h3 {
 	flex: 0 1 33.333%;
 	margin: 1%;
 	background-color: $mc;
+	border: 1px solid $rc;
 }
 .promo__img {
 	width: 100%;
@@ -186,25 +191,175 @@ h3 {
 	padding-bottom: 4%;
 	color: rgb(212, 212, 212);
 }
+.promo__link:hover {
+	color: white;
+}
+// 5-7 блок
 .portfolio {
 	max-width: 1100px;
 	margin-right: auto;
 	margin-left: auto;
 	text-align: center;
-	margin-top: 9%;
-	margin-top: 4%;
+	margin-top: 8%;
 }
-// Пятый блок
-.cosmetic, .capital, .new {
+.portfolio__header {
+	margin-bottom: 5%;
+}
+@import "slider.scss";
+// Восьмой блок (ПРАЙС)
+.price__header {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 10%;
+	margin-bottom: 4%;
+}
+.price {
 	max-width: 1100px;
 	display: flex;
 	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
 	text-align: center;
-	margin-top: 4%;
+	margin-bottom: 30%;
+
+}
+@import "price.scss";
+// Десятый блок (порядок работы)
+.work__title {
+	max-width: 1100px;
+	display: flex;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: 8%;
+	margin-bottom: 6%;
+}
+.work {
+	margin-top: 6%;
+}
+.work__container {
+	max-width: 100%;
+	display: flex;
+	padding: 3%;
+	padding-left: 3%;
+	padding-right: 3%;
+	background-color: $bc;
+	border: 1px solid $rc;
+}
+.work__block {
+	flex: 0 1 20%;
+	padding-right: 2%;
+	padding-left: 2%;
+}
+.work__header {
+	color: $mc;
+}
+.go {
+	max-width: 900px;
+	display: flex;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: 2%;
+	margin-bottom: 6%;
+}
+.go__text {
+	color: $toc;
+}
+//Двеннадцатый блок (контакты)
+.contacts {
+	max-width: 100%;
+	display: flex;
+	padding: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
+	background-image: url(../img/contacts-back.jpg);
+	border: 1px solid $rc;
+}
+.contacts__container {
+	display: flex;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
+.contacts__block1, .contacts__block2 {
+	padding: 25px;
+	flex: 0 1 50%;
 	background-color: $bc;
 }
-.portfolio__block1, .portfolio__block2 {
-	flex: 0 1 50%;
+.contacts__block1 {
+	margin-right: 2px;
+	padding-top: 4%;
+	padding-bottom: 8%;
+}
+.contacts__block2 {
+	padding-top: 4%;
+	padding-bottom: 5%;
+}
+.contacts__form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: auto;
+}
+.input_half, .input_full, .input_max {
+	margin: 8px;
+	background-color: $bc;
+	border: none;
+	border-bottom: 1px solid $tc;
+}
+.input_half {
+	width: 150px;
+	height: 20px;
+}
+.input_full {
+	width: 320px;
+	height: 20px;
+}
+.input_max {
+	width: 320px;
+	height: 80px;
+}
+.input_button {
+	margin: 5px;
+	width: 320px;
+	height: 40px;
+	color: $bc;
+	background-color: $tc;
+}
+.contacts__header {
+	font-size: 200%;
+}
+.contacts__text {
+	font-size: 90%;
+}
+.contacts__text_slim {
+	padding-left: 20%;
+	padding-right: 20%;
+}
+// Подвал сайта
+.footer {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+.footer__title {
+	color: $toc;
+}
+.footer__text {
+	font-size: 80%;
+	max-width: 800px;
+	color: $toc;
 }
 
 /*

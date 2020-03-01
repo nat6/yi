@@ -1,0 +1,168 @@
+@import "tools.scss";
+
+.cosmetic, .capital, .new {
+	max-width: 1100px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 4%;
+	background-color: $bc;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	border: 1px solid $rc;
+}
+.portfolio__block1, .portfolio__block2 {
+	flex: 0 1 50%;
+}
+.portfolio__block1 {
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+.portfolio__block2 {
+	padding-bottom: 0;
+	margin-bottom: 0;
+	position: relative;
+}
+.portfolio__container {
+}
+.portfolio__title {
+	color: $mc;
+}
+// Пятый блок
+.slider {
+	overflow: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 100%;
+	width: 100%;
+}
+.portfolio__navigation {
+	position: absolute;
+	bottom: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+}
+.portfolio__bar {
+	height: 10px;
+	width: 30px;
+	margin: 6px;
+	cursor: pointer;
+	background-color: $bc;
+	opacity: 0.5;
+	border-radius: 10px;
+	transition: all .4s ease;
+	border: 1px solid rgb(207, 207, 207);
+	&:hover {
+		opacity: 0.8;
+		transform: scale(1.1);
+	}
+}
+.portfolio__input {
+	position: absolute;
+	visibility: hidden;
+}
+.slides {
+	width: 400%;
+	height: 100%;
+	display: flex;
+}
+.slide {
+	width: 25%;
+	transition: all .3s ease;
+}
+.slide__img {
+	width: 100%;
+	height: 100%;
+}
+#cosmetic1:checked ~ .slide1 {
+	margin-left: 0;
+}
+#cosmetic2:checked ~ .slide2 {
+	margin-left: -25%;
+}
+#cosmetic3:checked ~ .slide3 {
+	margin-left: -50%;
+}
+#cosmetic4:checked ~ .slide4 {
+	margin-left: -75%;
+}
+/*
+.portfolio__container > input {
+	display: none;
+}
+.slider {
+	background-color: #ddd;
+	height: inherit;
+	overflow: hidden;
+	position: relative;
+	width: inherit;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	-o-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+	z-index: 100;
+}
+.slides {
+	height: inherit;
+	position: absolute;
+	width: inherit;
+}
+.slide1 {
+	background-image: url(../img/cosmetic-1cut.JPG); 
+}
+.slide2 {
+	background-image: url(../img/cosmetic-2cut.JPG); 
+}
+.slide3 {
+	background-image: url(../img/cosmetic-3cut.JPG); 
+}
+.slide4 {
+	background-image: url(../img/cosmetic-4cut.JPG); 
+}
+.portfolio__container .controls {
+	left: 50%;
+	margin-left: -98px;
+	position: absolute;
+}
+
+.portfolio__container label {
+	cursor: pointer;
+	display: inline-block;
+	height: 8px;
+	margin: 25px 12px 0 16px;
+	position: relative;
+	width: 8px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.portfolio__container label:after {
+	border: 2px solid #ddd;
+	content: " ";
+	display: block;
+	height: 12px;
+	left: -4px;
+	position: absolute;
+	top: -4px;
+	width: 12px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+.cosmetic__photo {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	width: 100%;
+	border: 1px solid black;
+}
+*/
