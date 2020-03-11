@@ -15,12 +15,12 @@
     <div class="container">
       <!--Шапка сайта-->
       <header class="header">
-        <div class="header__nav"><a class="menu__link" href="#hello">Главная</a><a class="menu__link" href="#about">О нас</a><a class="menu__link" href="#services">Услуги</a><a class="menu__link" href="#price">Прайс</a><a class="menu__link" href="#contacts">Контакты</a><a class="menu__link" href="mailto: yistroi@mail.ru">yistroi@mail.ru</a><a class="menu__link" href="tel: +79500102410">+79500102410</a><a class="menu__link" href="https://vk.com/yi_stroi" target="_blank"><img class="vk__icon" src="img/vk.png" alt="vkontakte"></a></div>
+        <div class="header__nav"><a class="menu__link" href="index.html#hello">Главная</a><a class="menu__link" href="index.html#about">О нас</a><a class="menu__link" href="index.html#services">Услуги</a><a class="menu__link" href="index.html#price">Прайс</a><a class="menu__link" href="index.html#contacts">Контакты</a><a class="menu__link" href="mailto: yistroi@mail.ru">yistroi@mail.ru</a><a class="menu__link" href="tel: +79500102410">+79500102410</a><a class="menu__link" href="https://vk.com/yi_stroi" target="_blank"><img class="vk__icon" src="img/vk.png" alt="vkontakte"></a></div>
       </header>
       <!--Основное содержимое-->
+      <div id="hello"></div>
       <main class="main">
         <!--Первый (приветственный) блок-->
-        <div id="hello"></div>
         <div class="main__block hello"> 
           <div class="hello__block1"><img class="hello__logo" src="img/logo.png">
             <div class="block1__text">
@@ -104,10 +104,10 @@
                     <input class="portfolio__input" id="cosmetic2" type="radio" name="cosmetic">
                     <input class="portfolio__input" id="cosmetic3" type="radio" name="cosmetic">
                     <input class="portfolio__input" id="cosmetic4" type="radio" name="cosmetic">
-                    <div class="slide slide1"><img class="slide__img" src="img/slider/cosmetic-1.jpg"></div>
-                    <div class="slide slide2"><img class="slide__img" src="img/slider/cosmetic-2.jpg"></div>
-                    <div class="slide slide3"><img class="slide__img" src="img/slider/cosmetic-3.jpg"></div>
-                    <div class="slide slide4"><img class="slide__img" src="img/slider/cosmetic-4.jpg"></div>
+                    <div class="slide slide1"><a href="img/slider/cosmetic-1.jpg" target="_blank"><img class="slide__img" src="img/slider/cosmetic-1cut.jpg"></a></div>
+                    <div class="slide slide2"><a href="img/slider/cosmetic-2.jpg" target="_blank"><img class="slide__img" src="img/slider/cosmetic-2cut.jpg"></a></div>
+                    <div class="slide slide3"><a href="img/slider/cosmetic-3.jpg" target="_blank"><img class="slide__img" src="img/slider/cosmetic-3cut.jpg"></a></div>
+                    <div class="slide slide4"><a href="img/slider/cosmetic-4.jpg" target="_blank"><img class="slide__img" src="img/slider/cosmetic-4cut.jpg"></a></div>
                   </div>
                   <div class="portfolio__navigation">
                     <label class="portfolio__bar" for="cosmetic1"></label>
@@ -128,7 +128,26 @@
               </div>
             </div>
             <div class="portfolio__block2">
-              <div class="portfolio__container"><img class="capital__photo" src="img/capital-1.JPG"><img class="capital__photo" src="img/capital-2.JPG"><img class="capital__photo" src="img/capital-3.JPG"><img class="capital__photo" src="img/capital-4.JPG"></div>
+              <div class="portfolio__container">
+                <div class="slider">
+                  <div class="slides">
+                    <input class="portfolio__input" id="capital1" type="radio" name="capital" checked>
+                    <input class="portfolio__input" id="capital2" type="radio" name="capital">
+                    <input class="portfolio__input" id="capital3" type="radio" name="capital">
+                    <input class="portfolio__input" id="capital4" type="radio" name="capital">
+                    <div class="slide slide1"><a href="img/slider/capital-1.jpg" target="_blank"><img class="slide__img" src="img/slider/capital-1cut.jpg"></a></div>
+                    <div class="slide slide2"><a href="img/slider/capital-2.jpg" target="_blank"><img class="slide__img" src="img/slider/capital-2cut.jpg"></a></div>
+                    <div class="slide slide3"><a href="img/slider/capital-3.jpg" target="_blank"><img class="slide__img" src="img/slider/capital-3cut.jpg"></a></div>
+                    <div class="slide slide4"><a href="img/slider/capital-4.jpg" target="_blank"><img class="slide__img" src="img/slider/capital-4cut.jpg"></a></div>
+                  </div>
+                  <div class="portfolio__navigation">
+                    <label class="portfolio__bar" for="capital1"></label>
+                    <label class="portfolio__bar" for="capital2"></label>
+                    <label class="portfolio__bar" for="capital3"></label>
+                    <label class="portfolio__bar" for="capital4"></label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <!--Седьмой блок-->
@@ -140,158 +159,33 @@
               </div>
             </div>
             <div class="portfolio__block2">
-              <div class="portfolio__container"></div><img class="new__photo" src="img/new-1.JPG"><img class="new__photo" src="img/new-2.JPG"><img class="new__photo" src="img/new-3.JPG"><img class="new__photo" src="img/new-4.JPG">
+              <div class="portfolio__container">
+                <div class="slider">
+                  <div class="slides">
+                    <input class="portfolio__input" id="new1" type="radio" name="new" checked>
+                    <input class="portfolio__input" id="new2" type="radio" name="new">
+                    <input class="portfolio__input" id="new3" type="radio" name="new">
+                    <input class="portfolio__input" id="new4" type="radio" name="new">
+                    <div class="slide slide1"><a href="img/slider/new-1.jpg" target="_blank"><img class="slide__img" src="img/slider/new-1cut.jpg"></a></div>
+                    <div class="slide slide2"><a href="img/slider/new-2.jpg" target="_blank"><img class="slide__img" src="img/slider/new-2cut.jpg"></a></div>
+                    <div class="slide slide3"><a href="img/slider/new-3.jpg" target="_blank"><img class="slide__img" src="img/slider/new-3cut.jpg"></a></div>
+                    <div class="slide slide4"><a href="img/slider/new-4.jpg" target="_blank"><img class="slide__img" src="img/slider/new-4cut.jpg"></a></div>
+                  </div>
+                  <div class="portfolio__navigation">
+                    <label class="portfolio__bar" for="new1"></label>
+                    <label class="portfolio__bar" for="new2"></label>
+                    <label class="portfolio__bar" for="new3"></label>
+                    <label class="portfolio__bar" for="new4"></label>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <!--Пятый блок
-        div#cosmetic
-        div.main__block.cosmetic
-        	div.portfolio__block1
-        		div.portfolio__container
-        			h3.portfolio__title КОСМЕТИЧЕСКИЙ РЕМОНТ
-        	div.portfolio__block2
-        		div.portfolio__container
-        			img.cosmetic__photo(src='img/cosmetic-1cut.JPG')
-        		//
-        			img.cosmetic__photo(src='img/cosmetic-4-2.JPG')
-        			img.cosmetic__photo(src='img/cosmetic-2cut.JPG')
-        			img.cosmetic__photo(src='img/cosmetic-3cut.JPG')
-        //Шестой блок
-        div#capital
-        div.main__block.capital
-        	div.portfolio__block1
-        		div.portfolio__container
-        			h3.portfolio__title КАПИТАЛЬНЫЙ РЕМОНТ
-        	div.portfolio__block2
-        		div.portfolio__container
-        			img.capital__photo(src='img/capital-1.JPG')
-        			img.capital__photo(src='img/capital-2.JPG')
-        			img.capital__photo(src='img/capital-3.JPG')
-        			img.capital__photo(src='img/capital-4.JPG')
-        //Седьмой блок
-        div#new
-        div.main__block.new
-        	div.portfolio__block1
-        		div.portfolio__container
-        			h3.portfolio__title РЕМОНТ В НОВОСТРОЙКЕ
-        	div.portfolio__block2
-        		div.portfolio__container
-        		img.new__photo(src='img/new-1.JPG')
-        		img.new__photo(src='img/new-2.JPG')
-        		img.new__photo(src='img/new-3.JPG')
-        		img.new__photo(src='img/new-4.JPG')
-        -->
         <!--Восьмой блок (прайс)-->
         <div id="price"></div>
-        <h2 class="price__header">ПРАЙС-ЛИСТ</h2>
         <div class="main__block price">
-          <div class="price__container">
-            <div class="price__block">
-              <input class="price__input price__input1" type="radio" name="price__radio" id="price__input1" checked>
-              <label class="price__label price__label1" for="price__input1">Демонтажные работы</label>
-              <table class="table__price table__price1">
-                <tr class="table__row">
-                  <th class="table__header first-col-head">Наименование работ</th>
-                  <th class="table__header">Ед. изм.</th>
-                  <th class="table__header">Цена (руб)</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Демонтаж перегородок из ГКЛ</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">4</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Демонтаж перегородок из ГКЛ</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">4</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Демонтаж перегородок из ГКЛ</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">4</th>
-                </tr>
-              </table>
-            </div>
-            <div class="price__block">
-              <input class="price__input price__input2" type="radio" name="price__radio" id="price__input2">
-              <label class="price__label price__label2" for="price__input2">Полы</label>
-              <table class="table__price table__price2">
-                <tr class="table__row">
-                  <th class="table__header first-col-head">Наименование работ</th>
-                  <th class="table__header">Ед. изм.</th>
-                  <th class="table__header">Цена (руб)</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Армирование стяжки пола</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">4</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Армирование стяжки пола</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">4</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Армирование стяжки пола</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">4</th>
-                </tr>
-              </table>
-            </div>
-            <div class="price__block">
-              <input class="price__input price__input3" type="radio" name="price__radio" id="price__input3">
-              <label class="price__label price__label3" for="price__input3">Стены</label>
-              <table class="table__price table__price3">
-                <tr class="table__row">
-                  <th class="table__header first-col-head">Наименование работ</th>
-                  <th class="table__header">Ед. изм.</th>
-                  <th class="table__header">Цена (руб)</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Монтаж перегородок (газосиликат)</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">4</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Монтаж перегородок (газосиликат)</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">4</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Монтаж перегородок (газосиликат)</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">4</th>
-                </tr>
-              </table>
-            </div>
-            <div class="price__block">
-              <input class="price__input price__input4" type="radio" name="price__radio" id="price__input4">
-              <label class="price__label price__label4" for="price__input4">Потолки</label>
-              <table class="table__price table__price4">
-                <tr class="table__row">
-                  <th class="table__header first-col-head">Наименование работ</th>
-                  <th class="table__header">Ед. изм.</th>
-                  <th class="table__header">Цена (руб)</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Штукатурка по маякам</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">4</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Штукатурка по маякам</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">5</th>
-                </tr>
-                <tr class="table__row">
-                  <th class="table__cell first-col">Штукатурка по маякам</th>
-                  <th class="table__cell">м²</th>
-                  <th class="table__cell">6</th>
-                </tr>
-              </table>
-            </div>
-          </div>
+          <div class="price__button"><a class="price__link" href="price.html">Прайс-лист</a></div>
         </div>
         <!--Девятый блок (видео)-->
         <div class="main__block video">
@@ -304,50 +198,40 @@
             <source src="video.ogv" type="video/ogg">
           </video>
         </div>
-        <!--Десятый блок (порядок работы)-->
-        <h2 class="work__title">ПОРЯДОК РАБОТЫ</h2>
-        <div class="main__block work">
-          <div class="work__container">
-            <div class="work__block">
-              <h3 class="work__header">ЗАЯВКА</h3>
-              <p class="work__text">
-                Вы оставляете заявку на сайте или по телефону +79500102410. 
-                Наши специалисты уточнят все подробности, ответят на все Ваши вопросы и передадут заявку специалисту по замеру.
-              </p>
-            </div>
-            <div class="work__block">
-              <h3 class="work__header">ЗАМЕР</h3>
-              <p class="work__text">
-                Замер необходим для оценки стоимость Вашего ремонта. 
-                К Вам БЕСПЛАТНО выезжает замерщик для составление точной сметы.
-                На стадии замера расскажите все свои пожелания и планы. 
-                От этого зависит  точность сметы и окончательный результат работ.
-                Смета составляется подробно, по каждому пункту отдельно и Вы сможете увидеть сколько будет стоить каждая работа.
-              </p>
-            </div>
-            <div class="work__block">
-              <h3 class="work__header">ДОГОВОР</h3>
-              <p class="work__text">
-                После согласования сметы и графика работ подписываем договор.
-                Пример договора отправляем на электронную почту.
-              </p>
-            </div>
-            <div class="work__block">
-              <h3 class="work__header">РАБОТА</h3>
-              <p class="work__text">
-                Мы выполняем ремонтные работы согласно графику и в рамках сметы.
-                Оплата происходит по акту выполненных работ. По завершении вывозим мусор и производим влажную уборку.
-              </p>
-            </div>
-            <div class="work__block">
-              <h3 class="work__header">ПРИЁМ</h3>
-              <p class="work__text">
-                Во время сдачи подписывается акт выполненных работ.
-                Если Вас все устраивает, вы производите окончательную оплату и получаете гарантию 2 года.
-              </p>
-            </div>
-          </div>
-        </div>
+        <!--
+        //Десятый блок (порядок работы)
+        h2.work__title ПОРЯДОК РАБОТЫ
+        div.main__block.work
+        	div.work__container
+        		div.work__block
+        			h3.work__header ЗАЯВКА
+        			p.work__text.
+        				Вы оставляете заявку на сайте или по телефону +79500102410. 
+        				Наши специалисты уточнят все подробности, ответят на все Ваши вопросы и передадут заявку специалисту по замеру.
+        		div.work__block
+        			h3.work__header ЗАМЕР
+        			p.work__text.
+        				Замер необходим для оценки стоимость Вашего ремонта. 
+        				К Вам БЕСПЛАТНО выезжает замерщик для составление точной сметы.
+        				На стадии замера расскажите все свои пожелания и планы. 
+        				От этого зависит  точность сметы и окончательный результат работ.
+        				Смета составляется подробно, по каждому пункту отдельно и Вы сможете увидеть сколько будет стоить каждая работа.
+        		div.work__block
+        			h3.work__header ДОГОВОР
+        			p.work__text.
+        				После согласования сметы и графика работ подписываем договор.
+        				Пример договора отправляем на электронную почту.
+        		div.work__block
+        			h3.work__header РАБОТА
+        			p.work__text.
+        				Мы выполняем ремонтные работы согласно графику и в рамках сметы.
+        				Оплата происходит по акту выполненных работ. По завершении вывозим мусор и производим влажную уборку.
+        		div.work__block
+        			h3.work__header ПРИЁМ
+        			p.work__text.
+        				Во время сдачи подписывается акт выполненных работ.
+        				Если Вас все устраивает, вы производите окончательную оплату и получаете гарантию 2 года.
+        -->
         <!--Одиннадцатый блок-->
         <div class="main__block go">
           <p class="go__text">

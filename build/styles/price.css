@@ -1,7 +1,46 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic");
-img {
-  width: 50px; }
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic");
+@font-face {
+  font-family: "BookAntiqua";
+  src: url("../fonts/BookAntiqua.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/BookAntiqua.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua.ttf") format("truetype"), url("../fonts/BookAntiqua.woff") format("woff"), url("../fonts/BookAntiqua.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
+
+p, a, h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #131313;
+  text-decoration: none; }
+
+a:hover {
+  color: #6e6e6e;
+  transition: all .5s ease; }
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #1a9f29;
+  font-size: 400%; }
+
+h2 {
+  font-family: 'BookAntiqua', serif;
+  font-weight: 400;
+  color: #1a9f29;
+  font-size: 230%; }
+
+h3 {
+  font-size: 100%; }
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px; }
 
 @font-face {
   font-family: "BookAntiqua";
@@ -11,6 +50,45 @@ img {
   /* Modern Browsers */
   font-weight: normal;
   font-style: normal; }
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding-top: 3%;
+  padding-right: 9%;
+  padding-bottom: 3%;
+  background-color: white;
+  border-bottom: 1px solid #e9e9e9;
+  z-index: 900; }
+
+.header__nav {
+  background-color: white; }
+
+.menu__link {
+  font-size: 85%;
+  padding-left: 24px; }
+
+.vk__icon {
+  width: 15px; }
+
+.price__header {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 12%;
+  margin-bottom: 5%; }
+
+.price {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center; }
 
 label, .table__price {
   font-family: 'Roboto', sans-serif;
@@ -43,10 +121,15 @@ label, .table__price {
   font-weight: 500;
   padding: 20px;
   z-index: 120; }
+  .price__label:hover {
+    cursor: pointer;
+    color: #6e6e6e; }
 
 .table__price {
   width: 670px;
   padding: 20px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
   display: flex;
   position: absolute;
   left: 0;
@@ -55,6 +138,19 @@ label, .table__price {
   border-collapse: collapse;
   border: 8px solid #f0f0f0;
   border-radius: 5px; }
+  .table__price:after {
+    content: "YIstroi©2020. Информация на сайте www.yistroi.ru носит исключительно ознакомительный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.";
+    font-size: 60%;
+    color: #6e6e6e;
+    margin-top: 100px;
+    text-align: center; }
+
+.table__row:hover {
+  background-color: #f7f7f7;
+  color: black; }
+
+.header__row:hover {
+  background-color: white; }
 
 .table__header, .table__cell {
   padding: 20px;
@@ -65,18 +161,29 @@ label, .table__price {
   width: 600px;
   font-size: 75%;
   font-weight: 500;
-  border: 1px solid #1a9f2aa1; }
+  border: 1px solid #1a9f2adb;
+  padding-top: 15px;
+  padding-bottom: 15px; }
 
 .table__cell {
   font-size: 75%;
   font-weight: 400;
-  border: 1px solid #1a9f2aa1; }
+  border: 1px solid #1a9f2adb; }
 
 .first-col-head {
-  width: 66%; }
+  width: 63%; }
 
 .first-col {
   text-align: left; }
+
+.first-col-title {
+  font-size: 64%;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #1a9f29;
+  color: white;
+  height: 22px;
+  padding: 0; }
 
 .table__price {
   display: none; }
@@ -103,3 +210,49 @@ label, .table__price {
 
 .price__input:checked ~ .price__label4 {
   left: 8px; }
+
+.price__input:checked ~ .price__label5 {
+  left: 8px; }
+
+.price__input:checked ~ .price__label6 {
+  left: 8px; }
+
+.footer {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+  padding-bottom: 10px; }
+
+.footer__title {
+  color: #6e6e6e; }
+
+.footer__text {
+  font-size: 80%;
+  max-width: 800px;
+  color: #6e6e6e; }
+
+@media (min-width: 1500px) {
+  .header {
+    padding-right: 26%; } }
+
+@media (min-width: 1800px) {
+  .header {
+    padding-right: 30%; }
+  .price__header {
+    margin-top: 14%; } }
+
+@media (min-width: 2050px) {
+  .header {
+    padding-right: 33%; }
+  .price__header {
+    margin-top: 17%; } }
+
+@media (min-width: 2500px) {
+  .header {
+    padding-right: 36%; }
+  .price__header {
+    margin-top: 20%; } }

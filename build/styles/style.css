@@ -1,13 +1,7 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,300i&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic");
-img {
-  width: 50px; }
-
 @font-face {
   font-family: "BookAntiqua";
   src: url("../fonts/BookAntiqua.eot");
@@ -46,6 +40,15 @@ h3 {
   max-width: 1200px;
   margin: 0px auto;
   padding: 0px 15px; }
+
+@font-face {
+  font-family: "BookAntiqua";
+  src: url("../fonts/BookAntiqua.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/BookAntiqua.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua.ttf") format("truetype"), url("../fonts/BookAntiqua.woff") format("woff"), url("../fonts/BookAntiqua.woff2") format("woff2");
+  /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal; }
 
 .header {
   width: 100%;
@@ -153,7 +156,7 @@ h3 {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 6%;
+  margin-top: 7%;
   margin-bottom: 7%; }
 
 .services__header {
@@ -216,18 +219,6 @@ h3 {
 .portfolio__header {
   margin-bottom: 5%; }
 
-img {
-  width: 50px; }
-
-@font-face {
-  font-family: "BookAntiqua";
-  src: url("../fonts/BookAntiqua.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/BookAntiqua.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua.ttf") format("truetype"), url("../fonts/BookAntiqua.woff") format("woff"), url("../fonts/BookAntiqua.woff2") format("woff2");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal; }
-
 .cosmetic, .capital, .new {
   max-width: 1100px;
   display: flex;
@@ -271,15 +262,17 @@ img {
   display: flex; }
 
 .portfolio__bar {
-  height: 10px;
-  width: 30px;
-  margin: 6px;
+  height: 12px;
+  width: 36px;
+  margin: 8px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   cursor: pointer;
   background-color: #f0f0f0;
   opacity: 0.5;
-  border-radius: 10px;
+  border-radius: 12px;
   transition: all .4s ease;
-  border: 1px solid #cfcfcf; }
+  border: 1px solid grey; }
   .portfolio__bar:hover {
     opacity: 0.8;
     transform: scale(1.1); }
@@ -311,6 +304,30 @@ img {
   margin-left: -50%; }
 
 #cosmetic4:checked ~ .slide4 {
+  margin-left: -75%; }
+
+#capital1:checked ~ .slide1 {
+  margin-left: 0; }
+
+#capital2:checked ~ .slide2 {
+  margin-left: -25%; }
+
+#capital3:checked ~ .slide3 {
+  margin-left: -50%; }
+
+#capital4:checked ~ .slide4 {
+  margin-left: -75%; }
+
+#new1:checked ~ .slide1 {
+  margin-left: 0; }
+
+#new2:checked ~ .slide2 {
+  margin-left: -25%; }
+
+#new3:checked ~ .slide3 {
+  margin-left: -50%; }
+
+#new4:checked ~ .slide4 {
   margin-left: -75%; }
 
 /*
@@ -390,13 +407,6 @@ img {
 	border: 1px solid black;
 }
 */
-.price__header {
-  max-width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-top: 10%;
-  margin-bottom: 4%; }
-
 .price {
   max-width: 1100px;
   display: flex;
@@ -404,151 +414,71 @@ img {
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  margin-bottom: 30%; }
+  margin-bottom: 12%;
+  margin-top: 12%; }
 
-img {
-  width: 50px; }
+.price__link {
+  color: white;
+  text-transform: uppercase;
+  background-color: #1a9f29;
+  width: 400px;
+  padding-top: 38px;
+  padding-bottom: 38px;
+  padding-left: 130px;
+  padding-right: 130px;
+  border-radius: 10px;
+  font-size: 110%; }
+  .price__link:hover {
+    background-color: #1a9f2adb;
+    color: white;
+    transition: all .8s ease;
+    font-size: 120%;
+    padding-top: 37px;
+    padding-bottom: 36px;
+    padding-left: 125px;
+    padding-right: 125px; }
 
-@font-face {
-  font-family: "BookAntiqua";
-  src: url("../fonts/BookAntiqua.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/BookAntiqua.eot?#iefix") format("embedded-opentype"), url("../fonts/BookAntiqua.ttf") format("truetype"), url("../fonts/BookAntiqua.woff") format("woff"), url("../fonts/BookAntiqua.woff2") format("woff2");
-  /* Modern Browsers */
-  font-weight: normal;
-  font-style: normal; }
-
-label, .table__price {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #131313;
-  text-decoration: none; }
-
-.price__container {
-  width: 670px;
-  display: flex;
-  justify-content: space-between;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-  position: relative; }
-
-.price__block {
-  display: flex;
-  justify-content: space-between;
-  font-size: 125%;
-  font-weight: 600; }
-
-.price__input {
-  display: none; }
-
-.price__label {
-  font-size: 90%;
-  font-weight: 500;
-  padding: 20px;
-  z-index: 120; }
-
-.table__price {
-  width: 670px;
-  padding: 20px;
-  display: flex;
-  position: absolute;
-  left: 0;
-  top: 64px;
-  background-color: white;
-  border-collapse: collapse;
-  border: 8px solid #f0f0f0;
-  border-radius: 5px; }
-
-.table__header, .table__cell {
-  padding: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-
-.table__header {
-  width: 600px;
-  font-size: 75%;
-  font-weight: 500;
-  border: 1px solid #1a9f2aa1; }
-
-.table__cell {
-  font-size: 75%;
-  font-weight: 400;
-  border: 1px solid #1a9f2aa1; }
-
-.first-col-head {
-  width: 66%; }
-
-.first-col {
-  text-align: left; }
-
-.table__price {
-  display: none; }
-
-.price__input:checked ~ .table__price {
-  display: block; }
-
-.price__input:checked ~ .price__label {
-  border: 8px solid #f0f0f0;
-  border-bottom: 8px solid white;
-  border-radius: 5px 5px 0 0;
-  position: relative;
-  top: -8px;
-  left: -6px; }
-
-.price__input:checked ~ .price__label1 {
-  left: -8px; }
-
-.price__input:checked ~ .price__label2 {
-  left: 8px; }
-
-.price__input:checked ~ .price__label3 {
-  left: 8px; }
-
-.price__input:checked ~ .price__label4 {
-  left: 8px; }
-
+/*
 .work__title {
-  max-width: 1100px;
-  display: flex;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-  margin-top: 8%;
-  margin-bottom: 6%; }
-
+	max-width: 1100px;
+	display: flex;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: 8%;
+	margin-bottom: 6%;
+}
 .work {
-  margin-top: 6%; }
-
+	margin-top: 6%;
+}
 .work__container {
-  max-width: 100%;
-  display: flex;
-  padding: 3%;
-  padding-left: 3%;
-  padding-right: 3%;
-  background-color: #f0f0f0;
-  border: 1px solid #e9e9e9; }
-
+	max-width: 100%;
+	display: flex;
+	padding: 3%;
+	padding-left: 3%;
+	padding-right: 3%;
+	background-color: $bc;
+	border: 1px solid $rc;
+}
 .work__block {
-  flex: 0 1 20%;
-  padding-right: 2%;
-  padding-left: 2%; }
-
+	flex: 0 1 20%;
+	padding-right: 2%;
+	padding-left: 2%;
+}
 .work__header {
-  color: #1a9f29; }
-
+	color: $mc;
+}
+*/
 .go {
-  max-width: 900px;
+  max-width: 800px;
   display: flex;
   justify-content: center;
   margin-right: auto;
   margin-left: auto;
   text-align: center;
-  margin-top: 2%;
-  margin-bottom: 6%; }
+  margin-top: 3%;
+  margin-bottom: 3%; }
 
 .go__text {
   color: #6e6e6e; }
@@ -643,99 +573,65 @@ label, .table__price {
   max-width: 800px;
   color: #6e6e6e; }
 
-/*
-.img__about {
-	width: 50%;
-	height: 50%;
-}
+@media (min-width: 1500px) {
+  .header {
+    padding-right: 20%; }
+  .services {
+    margin-top: 8%;
+    margin-bottom: 8%; }
+  .price {
+    margin-bottom: 14%;
+    margin-top: 14%; } }
 
-@media (max-width:1200px) {
-	.container {
-		max-width:970px;
-	}
-}
-@media (max-width:992px) {
-	.container {
-		max-width:750px;
-	}
-}
-@media (max-width:767px) {
-	.container {
-		max-width:none;
-	}
-}
-*/
-/*
-.promo {
-	max-width: 1100px;
-	margin: 0 auto;
-	display: flex;
-}
-.promo__block {
-	flex: 0 1 33.333%;
-	background-color: $maincol2;
-	margin: 15px;
-}
-*/
-/*
-%shablon {
-	background-color: yellow;
-}
-Включение строки в нужный селектор
-@extend %shablon;
-______
-$fz:100px;
-@mixin fontz($f,$c) {
-	font-size:$f;
-	color:$c;
-}
+@media (min-width: 1800px) {
+  .header {
+    padding-right: 20%; }
+  .services {
+    margin-top: 9%;
+    margin-bottom: 9%; }
+  .price {
+    margin-bottom: 15%;
+    margin-top: 15%; } }
 
-Подключение в селекторе
-@include fontz(50px,green);
-_______
-width: 300px / 960px * 100%;
-*/
-/*
+@media (min-width: 2050px) {
+  .header {
+    padding-right: 22%; }
+  .services {
+    margin-top: 10%;
+    margin-bottom: 9%; }
+  .price {
+    margin-bottom: 14%;
+    margin-top: 16%; } }
 
-// Добавление миксинов | @extend %mr;
-%mr {
-	display: flex;
-	margin:0 auto;
-}
+@media (min-width: 2500px) {
+  .header {
+    padding-right: 26%; }
+  .services {
+    margin-top: 12%;
+    margin-bottom: 10%; }
+  .price {
+    margin-bottom: 14%;
+    margin-top: 16%; } }
 
-<link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i&display=swap&subset=cyrillic" rel="stylesheet">
-font-family: 'Montserrat', sans-serif;
-
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,600i&display=swap&subset=cyrillic" rel="stylesheet">
-font-family: 'Open Sans', sans-serif;
-
- @font-face {
-		font-family: 'Kometa';
-		src: local('Kometa Unicase-Light'), local('Kometa-Unicase-Light'),
-				url('KometaUnicase-Light.woff2') format('woff2'),
-				url('KometaUnicase-Light.woff') format('woff'),
-				url('KometaUnicase-Light.ttf') format('truetype');
-		font-weight: 300;
-		font-style: normal;
-	}
-
-@font-face {
-	font-family: 'Latinotype';
-	src: local('Latinotype Book'), local('Latinotype-Book'),
-			url('ArquitectaBook.woff2') format('woff2'),
-			url('ArquitectaBook.woff') format('woff'),
-			url('ArquitectaBook.ttf') format('truetype');
-	font-weight: normal;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: 'Latinotype';
-	src: local('Latinotype Book Italic'), local('Latinotype-Book-Italic'),
-			url('ArquitectaBook-Italic.woff2') format('woff2'),
-			url('ArquitectaBook-Italic.woff') format('woff'),
-			url('ArquitectaBook-Italic.ttf') format('truetype');
-	font-weight: normal;
-	font-style: italic;
-}
-*/
+@media (min-width: 320px) and (max-width: 767px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px auto; }
+  .container {
+    min-width: 650px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 0px 5px; }
+  .main__block {
+    max-width: 760px;
+    display: flex; }
+  .hello {
+    margin-top: 15%;
+    margin-right: 2%;
+    margin-left: 2%; }
+  .hello__logo {
+    width: 50px;
+    padding-top: 18%;
+    padding-bottom: 2%;
+    padding-left: 12%; } }

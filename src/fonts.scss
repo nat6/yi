@@ -1,0 +1,14 @@
+// Добавление Гугл шрифтов
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic');
+// Подключение и декор базовых шрифтов
+@font-face {
+  font-family: "BookAntiqua";
+  src: url("../fonts/BookAntiqua.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/BookAntiqua.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/BookAntiqua.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/BookAntiqua.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/BookAntiqua.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}

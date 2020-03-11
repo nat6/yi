@@ -1,0 +1,26 @@
+@import "variables.scss";
+@import "fonts.scss";
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	right: 0;
+	padding-top: 3%;
+	padding-right: 9%;
+	padding-bottom: 3%;
+	background-color: white;
+	border-bottom: 1px solid $rc;
+	z-index: 900;
+}
+.header__nav {
+	background-color: white;
+}
+.menu__link {
+	font-size: 85%;
+	padding-left: 24px;
+}
+.vk__icon {
+	width: 15px;
+}

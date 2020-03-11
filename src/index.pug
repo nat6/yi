@@ -13,21 +13,11 @@ html(lang='ru-RU')
 	body
 		div.container
 			//Шапка сайта
-			header.header
-				div.header__nav
-					a.menu__link(href='#hello') Главная
-					a.menu__link(href='#about') О нас
-					a.menu__link(href='#services') Услуги
-					a.menu__link(href='#price') Прайс
-					a.menu__link(href='#contacts') Контакты
-					a.menu__link(href='mailto: yistroi@mail.ru') yistroi@mail.ru
-					a.menu__link(href='tel: +79500102410') +79500102410
-					a.menu__link(href='https://vk.com/yi_stroi' target='_blank')
-						img.vk__icon(src="img/vk.png" alt="vkontakte")
+			include menu.pug
 			//Основное содержимое
+			div#hello
 			main.main
 				//Первый (приветственный) блок
-				div#hello
 				div.main__block.hello 
 					div.hello__block1
 						img.hello__logo(src='img/logo.png')
@@ -97,48 +87,11 @@ html(lang='ru-RU')
 				div.portfolio
 					h2.portfolio__header ПОРТФОЛИО ПРОЕКТОВ
 					include slider.pug
-				//Пятый блок
-					div#cosmetic
-					div.main__block.cosmetic
-						div.portfolio__block1
-							div.portfolio__container
-								h3.portfolio__title КОСМЕТИЧЕСКИЙ РЕМОНТ
-						div.portfolio__block2
-							div.portfolio__container
-								img.cosmetic__photo(src='img/cosmetic-1cut.JPG')
-							//
-								img.cosmetic__photo(src='img/cosmetic-4-2.JPG')
-								img.cosmetic__photo(src='img/cosmetic-2cut.JPG')
-								img.cosmetic__photo(src='img/cosmetic-3cut.JPG')
-					//Шестой блок
-					div#capital
-					div.main__block.capital
-						div.portfolio__block1
-							div.portfolio__container
-								h3.portfolio__title КАПИТАЛЬНЫЙ РЕМОНТ
-						div.portfolio__block2
-							div.portfolio__container
-								img.capital__photo(src='img/capital-1.JPG')
-								img.capital__photo(src='img/capital-2.JPG')
-								img.capital__photo(src='img/capital-3.JPG')
-								img.capital__photo(src='img/capital-4.JPG')
-					//Седьмой блок
-					div#new
-					div.main__block.new
-						div.portfolio__block1
-							div.portfolio__container
-								h3.portfolio__title РЕМОНТ В НОВОСТРОЙКЕ
-						div.portfolio__block2
-							div.portfolio__container
-							img.new__photo(src='img/new-1.JPG')
-							img.new__photo(src='img/new-2.JPG')
-							img.new__photo(src='img/new-3.JPG')
-							img.new__photo(src='img/new-4.JPG')
 				//Восьмой блок (прайс)
 				div#price
-				h2.price__header ПРАЙС-ЛИСТ
 				div.main__block.price
-					include price.pug
+					div.price__button
+						a.price__link(href='price.html') Прайс-лист
 				//Девятый блок (видео)
 				div.main__block.video
 					video(loop muted poster='img/poster.png' width='100%' autoplay)
@@ -148,38 +101,39 @@ html(lang='ru-RU')
 						source(src="video.webm" type="video/webm")
 						// Ogg/Vorbis для старых версий браузеров Firefox и Opera
 						source(src="video.ogv" type="video/ogg")
-				//Десятый блок (порядок работы)
-				h2.work__title ПОРЯДОК РАБОТЫ
-				div.main__block.work
-					div.work__container
-						div.work__block
-							h3.work__header ЗАЯВКА
-							p.work__text.
-								Вы оставляете заявку на сайте или по телефону +79500102410. 
-								Наши специалисты уточнят все подробности, ответят на все Ваши вопросы и передадут заявку специалисту по замеру.
-						div.work__block
-							h3.work__header ЗАМЕР
-							p.work__text.
-								Замер необходим для оценки стоимость Вашего ремонта. 
-								К Вам БЕСПЛАТНО выезжает замерщик для составление точной сметы.
-								На стадии замера расскажите все свои пожелания и планы. 
-								От этого зависит  точность сметы и окончательный результат работ.
-								Смета составляется подробно, по каждому пункту отдельно и Вы сможете увидеть сколько будет стоить каждая работа.
-						div.work__block
-							h3.work__header ДОГОВОР
-							p.work__text.
-								После согласования сметы и графика работ подписываем договор.
-								Пример договора отправляем на электронную почту.
-						div.work__block
-							h3.work__header РАБОТА
-							p.work__text.
-								Мы выполняем ремонтные работы согласно графику и в рамках сметы.
-								Оплата происходит по акту выполненных работ. По завершении вывозим мусор и производим влажную уборку.
-						div.work__block
-							h3.work__header ПРИЁМ
-							p.work__text.
-								Во время сдачи подписывается акт выполненных работ.
-								Если Вас все устраивает, вы производите окончательную оплату и получаете гарантию 2 года.
+				//
+					//Десятый блок (порядок работы)
+					h2.work__title ПОРЯДОК РАБОТЫ
+					div.main__block.work
+						div.work__container
+							div.work__block
+								h3.work__header ЗАЯВКА
+								p.work__text.
+									Вы оставляете заявку на сайте или по телефону +79500102410. 
+									Наши специалисты уточнят все подробности, ответят на все Ваши вопросы и передадут заявку специалисту по замеру.
+							div.work__block
+								h3.work__header ЗАМЕР
+								p.work__text.
+									Замер необходим для оценки стоимость Вашего ремонта. 
+									К Вам БЕСПЛАТНО выезжает замерщик для составление точной сметы.
+									На стадии замера расскажите все свои пожелания и планы. 
+									От этого зависит  точность сметы и окончательный результат работ.
+									Смета составляется подробно, по каждому пункту отдельно и Вы сможете увидеть сколько будет стоить каждая работа.
+							div.work__block
+								h3.work__header ДОГОВОР
+								p.work__text.
+									После согласования сметы и графика работ подписываем договор.
+									Пример договора отправляем на электронную почту.
+							div.work__block
+								h3.work__header РАБОТА
+								p.work__text.
+									Мы выполняем ремонтные работы согласно графику и в рамках сметы.
+									Оплата происходит по акту выполненных работ. По завершении вывозим мусор и производим влажную уборку.
+							div.work__block
+								h3.work__header ПРИЁМ
+								p.work__text.
+									Во время сдачи подписывается акт выполненных работ.
+									Если Вас все устраивает, вы производите окончательную оплату и получаете гарантию 2 года.
 				//Одиннадцатый блок
 				div.main__block.go
 					p.go__text.

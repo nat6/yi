@@ -1,4 +1,54 @@
-@import "tools.scss";
+@import "variables.scss";
+@import "fonts.scss";
+p, a, h3 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	color: $tc;
+	text-decoration: none;
+}
+a:hover {
+	color: $toc;
+	transition: all .5s ease;
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	color: $mc;
+	font-size: 400%;
+}
+h2 {
+	font-family: 'BookAntiqua', serif;
+	font-weight: 400;
+	color: $mc;
+	font-size: 230%;
+}
+h3 {
+	font-size: 100%;
+}
+// Обёртка для всех блоков
+.container {
+	max-width: 1200px;
+	margin: 0px auto;
+	padding: 0px 15px;
+}
+// Верхнее меню
+@import "menu.scss";
+// прайс-лист
+.price__header {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 12%;
+	margin-bottom: 5%;
+}
+.price {
+	max-width: 1100px;
+	display: flex;
+	justify-content: center;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+}
 label, .table__price {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
@@ -16,6 +66,7 @@ label, .table__price {
 	padding-left: 20px;
 	padding-right: 20px;
 	position: relative;
+//	margin-bottom: 4800px;
 }
 // Общие блоки
 .price__block {
@@ -28,18 +79,23 @@ label, .table__price {
 .price__input {
 	display: none;
 }
-
 // Имя блока
 .price__label {
 	font-size: 90%;
 	font-weight: 500;
 	padding: 20px;
 	z-index: 120;
+	&:hover {
+		cursor: pointer;
+		color: $toc;
+	}
 }
 // ТАБЛИЦА
 .table__price {
 	width: 670px;
 	padding: 20px;
+	padding-bottom: 12px;
+	margin-bottom: 20px;
 	display: flex;
 	position: absolute;
 	left: 0;
@@ -48,7 +104,23 @@ label, .table__price {
 	border-collapse: collapse;
 	border: 8px solid $bc; 
 	border-radius: 5px;
+	&:after {
+		content: "YIstroi©2020. Информация на сайте www.yistroi.ru носит исключительно ознакомительный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.";
+		font-size: 60%;
+		color: $toc;
+		margin-top: 100px;
+		text-align: center;
+	}
 }
+//Выделение рядов при мышке
+.table__row:hover {
+	background-color: $pc;
+	color: black;
+}
+.header__row:hover {
+	background-color: white;
+}
+// Размеры ячеек
 .table__header, .table__cell {
 	padding: 20px;
 	padding-top: 10px;
@@ -59,6 +131,8 @@ label, .table__price {
 	font-size: 75%;
 	font-weight: 500;
 	border: 1px solid $mctr; 
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 .table__cell {
 	font-size: 75%;
@@ -66,10 +140,20 @@ label, .table__price {
 	border: 1px solid $mctr; 
 }
 .first-col-head {
-	width: 66%;
+	width: 63%;
 }
 .first-col {
 text-align: left;
+}
+// Подзаголовки в прайсе
+.first-col-title {
+	font-size: 64%;
+	text-align: center;
+	text-transform: uppercase;
+	background-color: $mc;
+	color: white;
+	height: 22px;
+	padding: 0;
 }
 // Скрываем лишние блоки прайса
 .table__price {
@@ -86,6 +170,7 @@ text-align: left;
 	top: -8px;
 	left: -6px;
 }
+// Выбор конкретного пункта
 .price__input:checked ~ .price__label1 {
 	left: -8px;
 }
@@ -98,3 +183,30 @@ text-align: left;
 .price__input:checked ~ .price__label4 {
 	left: 8px;
 }
+.price__input:checked ~ .price__label5 {
+	left: 8px;
+}
+.price__input:checked ~ .price__label6 {
+	left: 8px;
+}
+// Подвал сайта
+.footer {
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 25px;
+	padding-bottom: 10px;
+}
+.footer__title {
+	color: $toc;
+}
+.footer__text {
+	font-size: 80%;
+	max-width: 800px;
+	color: $toc;
+}
+// Адаптив
+@import "adaptive__price.scss";

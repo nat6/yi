@@ -1,81 +1,44 @@
-div.price__container
-	div.price__block
-		input.price__input.price__input1(type="radio" name="price__radio" id="price__input1" checked)
-		label.price__label.price__label1(for="price__input1") Демонтажные работы
-		table.table__price.table__price1
-			tr.table__row
-				th.table__header.first-col-head Наименование работ
-				th.table__header Ед. изм.
-				th.table__header Цена (руб)
-			tr.table__row
-				th.table__cell.first-col Демонтаж перегородок из ГКЛ
-				th.table__cell м²
-				th.table__cell 4
-			tr.table__row
-				th.table__cell.first-col Демонтаж перегородок из ГКЛ
-				th.table__cell м²
-				th.table__cell 4
-			tr.table__row
-				th.table__cell.first-col Демонтаж перегородок из ГКЛ
-				th.table__cell м²
-				th.table__cell 4
-	div.price__block
-		input.price__input.price__input2(type="radio" name="price__radio" id="price__input2")
-		label.price__label.price__label2(for="price__input2") Полы
-		table.table__price.table__price2
-			tr.table__row
-				th.table__header.first-col-head Наименование работ
-				th.table__header Ед. изм.
-				th.table__header Цена (руб)
-			tr.table__row
-				th.table__cell.first-col Армирование стяжки пола
-				th.table__cell м²
-				th.table__cell 4
-			tr.table__row
-				th.table__cell.first-col Армирование стяжки пола
-				th.table__cell м²
-				th.table__cell 4
-			tr.table__row
-				th.table__cell.first-col Армирование стяжки пола
-				th.table__cell м²
-				th.table__cell 4
-	div.price__block
-		input.price__input.price__input3(type="radio" name="price__radio" id="price__input3")
-		label.price__label.price__label3(for="price__input3") Стены
-		table.table__price.table__price3
-			tr.table__row
-				th.table__header.first-col-head Наименование работ
-				th.table__header Ед. изм.
-				th.table__header Цена (руб)
-			tr.table__row
-				th.table__cell.first-col Монтаж перегородок (газосиликат)
-				th.table__cell м²
-				th.table__cell 4
-			tr.table__row
-				th.table__cell.first-col Монтаж перегородок (газосиликат)
-				th.table__cell м²
-				th.table__cell 4
-			tr.table__row
-				th.table__cell.first-col Монтаж перегородок (газосиликат)
-				th.table__cell м²
-				th.table__cell 4
-	div.price__block
-		input.price__input.price__input4(type="radio" name="price__radio" id="price__input4")
-		label.price__label.price__label4(for="price__input4") Потолки
-		table.table__price.table__price4
-			tr.table__row
-				th.table__header.first-col-head Наименование работ
-				th.table__header Ед. изм.
-				th.table__header Цена (руб)
-			tr.table__row
-				th.table__cell.first-col Штукатурка по маякам
-				th.table__cell м²
-				th.table__cell 4
-			tr.table__row
-				th.table__cell.first-col Штукатурка по маякам
-				th.table__cell м²
-				th.table__cell 5
-			tr.table__row
-				th.table__cell.first-col Штукатурка по маякам
-				th.table__cell м²
-				th.table__cell 6
+doctype html
+html(lang='ru-RU')
+	head
+		//Служебная информация для браузера
+		meta(charset='utf-8')
+		meta(name='description' content='Ремонт квартир под ключ, косметический ремонт, ремонт в новостройках.  Ремонт санузлов, ванных комнат, отделка балконов.  Узнайте стоимость отделочных работ под ваш объект. Выезд замерщика бесплатно. Мы предлагаем средние расценки по Санкт-Петербургу. Учитываем бюджет. Гарантия на все работы. Поэтапная оплата. После подписания договора, стоимость ремонта не меняется. Вывоз мусора.')
+		meta(name='keywords' content='')
+		meta(name='viewport' content='width=device-width')
+		link(rel='shortcut icon' href='img/favicon.ico' type='image/png')
+		link(rel="stylesheet" type="text/css" href="styles/price.css")
+		title YIstroi — Ремонт квартир и коттеджей, все виды ремонтных работ.
+	body
+		div.container
+			//Шапка сайта
+			include menu.pug
+			// Главное
+			main.main
+				h2.price__header ПРАЙС-ЛИСТ
+				div.main__block.price
+				div.price__container
+					div.price__block
+						input.price__input.price__input1(type="radio" name="price__radio" id="price__input1" checked)
+						label.price__label.price__label1(for="price__input1") Демонтаж
+						include price__dismantling.pug
+					div.price__block
+						input.price__input.price__input2(type="radio" name="price__radio" id="price__input2")
+						label.price__label.price__label2(for="price__input2") Пол
+						include price__floor.pug
+					div.price__block
+						input.price__input.price__input3(type="radio" name="price__radio" id="price__input3")
+						label.price__label.price__label3(for="price__input3") Стены
+						include price__walls.pug
+					div.price__block
+						input.price__input.price__input4(type="radio" name="price__radio" id="price__input4")
+						label.price__label.price__label4(for="price__input4") Потолки
+						include price__ceiling.pug
+					div.price__block
+						input.price__input.price__input5(type="radio" name="price__radio" id="price__input5")
+						label.price__label.price__label5(for="price__input5") Электрика
+						include price__electrician.pug
+					div.price__block
+						input.price__input.price__input6(type="radio" name="price__radio" id="price__input6")
+						label.price__label.price__label6(for="price__input6") Сантехника
+						include price__plumbing.pug

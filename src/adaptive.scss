@@ -1,0 +1,83 @@
+// Адаптив для ширика
+@media (min-width: 1500px) {
+	.header {
+		padding-right: 20%;
+	}
+	.services {
+		margin-top: 8%;
+		margin-bottom: 8%;
+	}
+	.price {
+		margin-bottom: 14%;
+		margin-top: 14%;
+	}
+}
+@media (min-width: 1800px) {
+	.header {
+		padding-right: 20%;
+	}
+	.services {
+		margin-top: 9%;
+		margin-bottom: 9%;
+	}
+	.price {
+		margin-bottom: 15%;
+		margin-top: 15%;
+	}
+}
+@media (min-width: 2050px) {
+	.header {
+		padding-right: 22%;
+	}
+	.services {
+		margin-top: 10%;
+		margin-bottom: 9%;
+	}
+	.price {
+		margin-bottom: 14%;
+		margin-top: 16%;
+	}
+}
+@media (min-width: 2500px) {
+	.header {
+		padding-right: 26%;
+	}
+	.services {
+		margin-top: 12%;
+		margin-bottom: 10%;
+	}
+	.price {
+		margin-bottom: 14%;
+		margin-top: 16%;
+	}
+}
+// Адаптив для мобилки
+
+@media (min-width: 320px) and (max-width:767px) {
+	.header {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin: 0px auto;
+	}
+	.container {
+		min-width: 650px;
+		width: 100%;
+		margin: 0px auto;
+		padding: 0px 5px;
+	}
+	.main__block {
+		max-width: 760px;
+		display: flex;
+	}
+	.hello {
+		margin-top: 15%;
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+	.hello__logo {
+		width: 50px;
+		padding-top: 18%;
+		padding-bottom: 2%;
+		padding-left: 12%;
+	}
+}

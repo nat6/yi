@@ -1,0 +1,31 @@
+// Адаптив для ширика
+@media (min-width: 1500px) {
+	.header {
+		padding-right: 26%;
+	}
+}
+@media (min-width: 1800px) {
+	.header {
+		padding-right: 30%;
+	}
+	.price__header {
+		margin-top: 14%;
+	}
+}
+@media (min-width: 2050px) {
+	.header {
+		padding-right: 33%;
+	}
+	.price__header {
+		margin-top: 17%;
+	}
+}
+@media (min-width: 2500px) {
+	.header {
+		padding-right: 36%;
+	}
+	.price__header {
+		margin-top: 20%;
+	}
+}
+// Адаптив для мобилки
